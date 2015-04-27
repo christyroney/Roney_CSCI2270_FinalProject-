@@ -9,7 +9,7 @@ Dependencies:
 This program does not require any dependencies. However, it does require a file to be read in that is a list of books which became movies. The file Books.txt can be used as that file to be read in, yet if you would like to create your own list of books which became movies txt file that is fine.
 
 System Requirements: 
-This program runs on any Linux operating system.
+This program has no system requirements.
 
 Group Members:
 I worked alone on this project.
