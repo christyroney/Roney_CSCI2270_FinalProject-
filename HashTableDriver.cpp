@@ -15,9 +15,7 @@ int main(int argc, char* argv[])
 	HashTable * movies = new HashTable();
 	
 	string line;
-	string filename = "Books.txt";
-	//std::string str(arg[1]);
-	//string filename = string(argv[1]);
+	string filename = argv[1];
 	ifstream in;
 	in.open(filename); //opening the file
 	if(in.is_open())
