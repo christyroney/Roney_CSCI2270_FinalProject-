@@ -52,7 +52,12 @@ int main(int argc, char* argv[])
 				cout<<"Enter title:"<<endl;
 				string titleofMovie;
 				getline(cin, titleofMovie);
-				movies->deleteMovie(titleofMovie);
+				if(movies->doesBookExist(titleofMovie) == true)
+				{
+					movies->deleteMovie(titleofMovie);
+				}
+				else
+					cout<<"Sorry, that book does not exist on this list."<<endl;
 				break;
 			}
 			case 3: //Find movie
