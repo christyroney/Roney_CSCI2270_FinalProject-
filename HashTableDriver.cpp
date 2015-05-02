@@ -96,18 +96,19 @@ int main(int argc, char* argv[])
 					getline(cin, character);
 					cout<<"How awesome was this character? Rate (1-10)."<<endl;
 					getline(cin, charRating);
-					int intcharRating = stoi(charRating);
 					cout<<"Enter rating for the book (1-10)."<<endl;
 					getline(cin, bRating);
-					int intbRating = stoi(bRating);
 					cout<<"Enter rating for the movie (1-10)."<<endl;
 					getline(cin, mRating);
-					int intmRating = stoi(mRating);
-					movies->addBestCharacter(titleofMovie, character, intbRating, intmRating, intcharRating);
-					
-					
-					
-					//movies->displayBestCharacters();
+					if(movies->isRankingValid(charRating)== true && movies->isRankingValid(bRating)== true && movies->isRankingValid(mRating)== true )
+					{
+						int intmRating = stoi(mRating);
+						int intcharRating = stoi(charRating);
+						int intbRating = stoi(bRating);
+						movies->addBestCharacter(titleofMovie, character, intbRating, intmRating, intcharRating);
+					}
+					else
+						cout<<"Sorry, you must enter ratings (1-10)."<<endl;
 				}
 				else
 					cout<<"Book does not exist"<<endl;
