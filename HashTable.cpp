@@ -139,7 +139,7 @@ Movie* HashTable::findMovie(string inTitle)
 	{
 		if(temp->title == inTitle)
 		{
-			cout<<index<<":"<<temp->title<<endl;
+			cout<<temp->title<<;
 			return temp;
 		}
 			
