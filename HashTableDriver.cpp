@@ -68,12 +68,15 @@ int main(int argc, char* argv[])
 			}
 			case 4: //Insert a book
 			{
-				
-				
 				cout<<"Enter title:"<<endl;
 				string titleofMovie;
 				getline(cin, titleofMovie);
-				movies->insertMovie(titleofMovie);
+				if(titleofMovie != " ")
+				{
+					movies->insertMovie(titleofMovie);
+				}
+				else
+					cout<<"Sorry, you entered a space."<<endl;
 				break;
 			}
 			case 5:
