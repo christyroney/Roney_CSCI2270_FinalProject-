@@ -50,6 +50,7 @@ class HashTable
         void displayMenu();
         void printBestBooks();
         void printBestMovies();
+        bool isRankingValid(std::string rank);
     protected:
     private:
         Movie **hashTable;
