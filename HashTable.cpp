@@ -536,3 +536,16 @@ void HashTable::printBestMovies()
 	else
 		cout<<"empty"<<endl;	
 }
+
+//This function returns true if the ranking is valid (between 1-10)
+//Not one of the main functions
+bool HashTable::isRankingValid(string ranking)
+{
+	if(ranking == "1" || ranking == "2" || ranking == "3" ||
+	ranking == "4" || ranking == "5" || ranking == "6" ||
+	ranking == "7" || ranking == "8" || ranking == "9" || ranking == "10")
+		return true;
+	
+	return false;
+	
+}
