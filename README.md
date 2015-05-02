@@ -15,7 +15,7 @@ Group Members:
 I worked alone on this project.
 
 Contributors:
-Rhonda Hoenigman helped resolve a bug in my code which was causing a seg fault when adding an extra parameter to my movie struct.
+Rhonda Hoenigman helped resolve a bug in my code which was causing a seg fault when adding an extra parameter to my movie struct.  Also, PostRockRaven created an issue for my project that if the user typed in a movie that didn't exist in the list, the code segfaulted. Therefore, I fixed this issue by adding a conditional to my driver file.
 
 Open issues/bugs:
 I have not encountered any bugs with my code, yet I am open to requests involving how to display my list of movies that became books in alphabetical order.
