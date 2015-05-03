@@ -549,3 +549,32 @@ bool HashTable::isRankingValid(string ranking)
 	return false;
 	
 }
+
+
+void HashTable::printInOdrder() {
+	Movie * movieArray[10];
+	bool printall=false;
+	Movie *next;
+	int cur=0;
+	for (int i = 0; i < 10; i++) {
+		movieArray[i] = hashTable[i];
+	}
+	while (printall != true) {
+		next = movieArray[0];
+		cur = 0;
+		for (int j = 1; j < 10; j++) {
+			if (movieArray[j]!=NULL && (next == NULL || movieArray[j]->title < next->title)) {
+				next = movieArray[j];
+				cur = j;
+			}
+		}
+		//movieArray[cur] == next->next;
+		if (movieArray[cur]==NULL) {
+			printall = true;
+		}
+		else {
+			cout << movieArray[cur]->title << endl;
+			movieArray[cur] = next->next;
+		}
+	}
+}
