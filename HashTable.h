@@ -38,6 +38,7 @@ class HashTable
 {
     public:
         HashTable();
+        void printInOrder();
         void insertMovie(std::string s);
         Movie* findMovie(std::string in_title);
         void deleteMovie(std::string in_title);
