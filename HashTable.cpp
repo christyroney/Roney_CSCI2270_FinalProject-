@@ -139,7 +139,7 @@ Movie* HashTable::findMovie(string inTitle)
 	{
 		if(temp->title == inTitle)
 		{
-			cout<<temp->title<<;
+			cout<<temp->title<<endl;
 			return temp;
 		}
 			
@@ -550,7 +550,17 @@ bool HashTable::isRankingValid(string ranking)
 	
 }
 
-
+/*
+Function prototype:
+void HashTable::printInOrder()
+Function description:
+This method was contributed to me and prints the elements of the hashtable in alphabetical order.
+Example:
+HashTable ht;
+ht.printInOrder()
+Precondition: Unused locations in hashTable vector are NULL. Movies stored using correctly calculated hash code calculated from movie title. There is no input.
+Post condition: Movie nodes are printed in alphabetical order.
+*/
 void HashTable::printInOdrder() {
 	Movie * movieArray[10];
 	bool printall=false;
